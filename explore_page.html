@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="explore.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<title>Explore Renewables</title>
+	</head>
+
+	<body>
+		<h1 align="center" class="heading">Renewable Energy</h1>
+		<h2 align="center" class="heading">Now Available For You</h2>
+
+		<div class="topnavi">
+			<a href="heat_pumps.html">Heat Pumps</a>
+			<a href="EV.html">Electric Vehicles</a>
+			<a href="solar.html">Solar Energy</a>
+			<a class="active" href="explore_page.html">Home</a>
+		</div>
+		
+		<!--image carousel script-->
+		<script type="text/javascript">
+			var slideIndex=1;
+			showSlides(slideIndex);
+
+			function plusSlides(n){showSlides(slideIndex+=n);}
+
+			function currentSlide(n){showSlides(slideIndex=n);}
+
+			function showSlides(n)
+			{
+				var slides = document.getElementsByClassName("exploreEV");
+				var markers = document.getElementsByClassName("marker");
+
+				for(var i = 0; i < slides.length; i++)
+					slides[i].style.display = "none";
+				for(var i = 0; i < markers.length; i++)
+					markers[i].className = markers[i].className.replace(" active", "");
+				
+				if(n > slides.length)
+					slideIndex = 1;
+				if(n < 1)
+					slideIndex = slides.length;
+
+				markers[slideIndex-1].className += " active";
+				slides[slideIndex-1].style.display = "block";
+			}
+		</script>
+
+		<h2 align="center" style="font-family: Lucida Bright; color: slategray;">Electric Vehicles</h2>
+		<!--image carousel-->
+		<div class="image-carousel" width="100">
+			<!--images-->
+			<div class="exploreEV">
+				<img src="ev_charging.jpg" style="width:100%">
+				<div class="attribution">
+					<a href="https://www.flickr.com/photos/26344495@N05/50981261653" target="_blank">"Close-up of an electric car charging. Traffic lights in a blurry background"</a> by <a href="https://www.flickr.com/photos/26344495@N05/" target="_blank"> Ivan Radic</a>, licensed under <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY 2.0</a>.
+				</div>
+			</div>
+			<div class="exploreEV">
+				<img src="BMW_i5.jpg" style="width:100%">
+				<div class="attribution">
+					<a href="https://www.flickr.com/photos/artvlive/53334232628" target="_blank">"P90523139_highRes_the-bmw-i5-m60-xdriv"</a> by <a href="https://www.flickr.com/photos/artvlive/" target="_blank">Automotive Rhythms</a>, licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/" target="_blank">CC BY-ND-NC 2.0</a>.
+				</div>
+			</div>
+			<div class="exploreEV">
+				<img src="ford-150-lightning.jpg" style="width:100%">
+				<div class="attribution">
+					<a href="https://www.freemalaysiatoday.com/category/business/2023/12/12/ford-slashes-f-150-ev-plans-as-tesla-rolls-out-cybertruck/" target="_blank">"Ford pic"</a> via <a href="https://www.freemalaysiatoday.com/" target="_blank">Free Malaysia Today</a>, licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+				</div>
+			</div>
+			<div class="exploreEV">
+				<img src="hyundai_kona.jpg" style="width:100%">
+				<div class="attribution">
+					<a href="https://commons.wikimedia.org/wiki/File:2024_Hyundai_Kona_N_Line_AWD_in_Meta_Blue,_Front_Right,_09-30-2023.jpg" target="_blank">"2024 Hyundai Kona N Line AWD in Meta Blue, Front Right, 09-30-2023"</a> by <a href="https://en.wikipedia.org/wiki/User:Elise240SX" target="_blank">Elise240SX</a>, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>.
+				</div>
+			</div>
+			<div class="exploreEV">
+				<img src="lucid.jpg" style="width:100%">
+				<div class="attribution">
+					<a href="https://www.flickr.com/photos/artvlive/52504852499" target="_blank">"2022 Lucid Air Pure Unveil at the LA Auto Show"</a> by <a href="https://www.flickr.com/photos/artvlive/" target="_blank">Automotive Rhythms</a>, licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/" target="_blank">CC BY-ND-NC 2.0</a>.
+				</div>
+			</div>
+			<div class="exploreEV">
+				<img src="Renault.jpg" style="width:100%">
+				<div class="attribution">
+					<a href="https://commons.wikimedia.org/wiki/File:Renault_Sc%C3%A9nic_E-Tech_Electric_220_Long_Range_Techno_%E2%80%93_f_30062024.jpg" target="_blank">"Renault Scénic E-Tech Electric 220 Long Range Techno – f 30062024"</a> by <a href="https://de.wikipedia.org/wiki/Benutzer:M_93" target="_blank">M 93</a>, licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/de/deed.en" target="_blank">CC BY-SA 3.0 DE</a>.
+				</div>
+			</div>
+			<div class="exploreEV">
+				<img src="porsche-taycan.jpg" style="width:100%">
+				<div class="attribution">
+					<a href="https://commons.wikimedia.org/wiki/File:2020_Porsche_Taycan_4S_79kWh_Front.jpg" target="_blank">"2020 Porsche Taycan 4S 79kWh Front"</a> by <a href="https://commons.wikimedia.org/wiki/User:Vauxford" target="_blank">Vauxford</a>, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>.
+				</div>
+			</div>
+			<div class="exploreEV">
+				<img src="rivian.jpg" style="width:100%">
+				<div class="attribution">
+					<a href="https://www.flickr.com/photos/tomronworldwide/51404704342" target="_blank">"Electric vehicle startup, Rivian Motors, is located in my hometown. Aside from their now iconic pickup, Rivian is building a fleet of delivery trucks for Amazon."</a> by <a href="https://www.flickr.com/photos/tomronworldwide/" target="_blank">Ron Frazier</a>, licensed under <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY 2.0</a> / Cropped from original.
+				</div>
+			</div>
+			<div class="exploreEV">
+				<img src="tesla.jpg" style="width:100%">
+				<div class="attribution">
+					<a href="https://commons.wikimedia.org/wiki/File:Tesla_Model_3_%282023%29,_long_range,_Japan,_left-front.jpg" target="_blank">"Tesla Model 3 (2023), long range, Japan, left-front"</a> by <a href="https://ja.wikipedia.org/wiki/%E5%88%A9%E7%94%A8%E8%80%85:Kazyakuruma" target="_blank">Kazyakuruma</a>, licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank">CC0 1.0</a>.
+				</div>
+			</div>
+
+			<!--next + previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+
+		<!--slide marker-->
+		<div style="text-align: center;">
+			<span class="marker" onclick="currentSlide(1)"></span>
+			<span class="marker" onclick="currentSlide(2)"></span>
+			<span class="marker" onclick="currentSlide(3)"></span>
+			<span class="marker" onclick="currentSlide(4)"></span>
+			<span class="marker" onclick="currentSlide(5)"></span>
+			<span class="marker" onclick="currentSlide(6)"></span>
+			<span class="marker" onclick="currentSlide(7)"></span>
+			<span class="marker" onclick="currentSlide(8)"></span>
+			<span class="marker" onclick="currentSlide(9)"></span>
+		</div>
+
+		<a href="EV.html"><button type="button" class="learn-more">Learn More</button></a>
+
+		<!--<hr>
+		<p><i>Sources:ICEX, Copyright 2020<br>https://www.investinspain.org/en/industries/tourism-leisure<br>Encyclopedia Britannica, Inc. Copyright 2024<br>https://www.britannica.com/place/Spain/Government-and-society</i></p>
+		-->
+	</body>
+</html>
+
+<!--2. make slideshow automatic-->
+<!--3. maybe make several carousels-->
+<!--5. add info-->
+<!--6. what is fade in css?-->
+
+
